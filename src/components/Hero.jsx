@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import heroImg from "../img/hero.png";
+import heroImg from "../assets/img/hero.png";
 import Button from "./Button";
 
 export default function Hero() {

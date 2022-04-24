@@ -1,5 +1,6 @@
 import React from "react";
-import arrow from "../img/arrow.svg";
+import arrow from "../assets/img/arrow.svg";
+
 export default function Cta() {
   const [email, setEmail] = React.useState("");
 
@@ -13,11 +14,14 @@ export default function Cta() {
   }
 
   return (
-    <div className='flex bg-cta relative flex-col md:flex-row w-3/4 mx-auto'>
+    <div
+      className='flex bg-cta relative flex-col md:flex-row w-3/4 mx-auto scroll-mt-20'
+      id='contact'
+    >
       <div className='cta-img'>
         <img
           className='flex-col w-full'
-          src={require("../img/mailing-list-img.png")}
+          src={require("../assets/img/mailing-list-img.png")}
           alt='ss'
         />
       </div>

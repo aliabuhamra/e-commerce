@@ -8,8 +8,8 @@ import Logo from "./Logo";
 
 const navigation = [
   { name: "Home", href: "/", current: true },
-  { name: "Collection", href: "/products", current: true },
-  { name: "Contact", href: "/cart", current: false },
+  { name: "Collection", href: "products", current: true },
+  { name: "Contact", href: "cart", current: true },
 ];
 
 function classNames(...classes) {
