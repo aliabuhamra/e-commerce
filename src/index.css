@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+.-z-0 {
+  z-index: -3;
+}
+
+.active {
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+/* BUTTONS */
+.btn {
+  border-radius: 0px;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 13px 40px;
+  font-weight: 600;
+  border: 0;
+  transition: background-color 200ms, color 200ms;
+}
+
+.btn-outline {
+  border: 1px solid hsla(0, 0%, 20%, 1);
+  transition: background-color 500ms, color 200ms;
+}
+
+.btn-outline:hover {
+  background-color: hsla(0, 0%, 20%, 1);
+  color: white;
+}
+
+.btn-default {
+  color: white;
+  background-color: hsla(0, 0%, 20%, 1);
+  transition: background-color 500ms, color 200ms;
+  border: 1px solid hsla(0, 0%, 20%, 1);
+}
+
+.btn-default:hover {
+  color: hsla(0, 0%, 20%, 1);
+  background-color: unset;
+  border: 1px solid hsla(0, 0%, 20%, 1);
+}
