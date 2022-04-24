@@ -1,7 +1,7 @@
 # e-commerce
 
 ![github repo size](https://img.shields.io/github/repo-size/aliabuhumra/e-commerce)
-![github contributors](https://img.shields.io/github/contributors/e-commerce/urlrepo)
+![github contributors](https://img.shields.io/github/contributors/aliabuhumra/e-commerce)
 ![github twiter](https://img.shields.io/twitter/follow/AliAbuhumra?style=social)
 
 ### Screenshot
@@ -69,10 +69,11 @@ Users should be able to:
 
   - What if you need to run a piece of code whenever React Router navigates to a new URL?
   - You can do that with the useLocation hook.
-    1 - This hook returns the location object used by the react-router.
-    2 - This object represents the current URL and is immutable.
-    3 - Whenever the URL changes, the useLocation() hook returns a newly updated location object
-    4 - `// run a piece of code on location change useEffect(() => { console.log(location.pathname); // send it to analytic, or do some conditional logic here }, [location]);`
+     - run a piece of code on location change 
+     - This hook returns the location object used by the react-router.
+     - This object represents the current URL and is immutable.
+     - Whenever the URL changes, the useLocation() hook returns a newly updated location object.<br/>
+          ```useEffect(() => { console.log(location.pathname);// send it to analytic, or do some conditional logic here }[location]);```
 
 - I used react router, [BrwoserRoute , Routes , Route , Link , params]
   This is part of the code I was facing the challenge with
@@ -111,8 +112,3 @@ Users should be able to:
 
 Thanks for checking out this project.
 
-- Sucessfuly to add purgeCSS to unused css bootstrap :
-
-```
-
-```
