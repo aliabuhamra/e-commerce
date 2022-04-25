@@ -37,7 +37,7 @@ export default function Order({ cart, onStripeCheckout, onProductDelete }) {
               <p>{product.quantity}</p>
               <p>
                 <span>&#36;</span>
-                {product.quantity * product.price}
+                {Number(product.quantity * product.price).toFixed(10)}
               </p>
               <Button outline onClick={() => onProductDelete(product.id)} onan>
                 x

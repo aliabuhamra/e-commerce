@@ -27,7 +27,6 @@ export default function Nav({ cart }) {
                 <div className='flex items-center justify-between h-16'>
                   <div className='flex items-center'>
                     <Logo />
-
                     {/* Nav Menu */}
                     <div className='hidden md:block'>
                       <div className='ml-10 flex items-baseline space-x-4'>
