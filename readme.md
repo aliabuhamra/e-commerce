@@ -94,6 +94,12 @@ Users should be able to:
     ```
 
 </details>
+<summary>:zap: Preload important resources تحميل الموارد الهامة مسبقا
+</summary>
+  - [Link - Netlify](https://web.dev/optimize-lcp/?utm_source=lighthouse&utm_medium=devtools#preload-important-resources)
+<details>
+
+</details>
 - I faced problems with netlify router , He needed to get him on the right track, Because the local path is different from the path in the host netlify,
 I found the solution to the problem in this link
   - [Link - Stackoverflow](https://stackoverflow.com/questions/55990467/catch-all-redirect-for-create-react-app-in-netlify)

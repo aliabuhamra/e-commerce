@@ -3,6 +3,10 @@ import Button from "./Button";
 import { Link } from "react-router-dom";
 
 export default function Order({ cart, onStripeCheckout, onProductDelete }) {
+  function financial(x) {
+    return Number(x).toFixed(2);
+  }
+
   const totalQuantity = cart.reduce(
     (total, product) => total + product.quantity,
     0
@@ -12,6 +16,7 @@ export default function Order({ cart, onStripeCheckout, onProductDelete }) {
     (total, product) => total + totalQuantity * product.price,
     0
   );
+
   return (
     <div className='flex flex-col gap-6 mb-28 pt-5 px-4 sm:px-6 lg:px-8'>
       <h5 className='pb-4'>Your Cart</h5>
@@ -37,9 +42,9 @@ export default function Order({ cart, onStripeCheckout, onProductDelete }) {
               <p>{product.quantity}</p>
               <p>
                 <span>&#36;</span>
-                {Number(product.quantity * product.price).toFixed(10)}
+                {financial(product.quantity * product.price)}
               </p>
-              <Button outline onClick={() => onProductDelete(product.id)} onan>
+              <Button outline onClick={() => onProductDelete(product.id)}>
                 x
               </Button>
               <Button outline onClick={onStripeCheckout}>
@@ -53,7 +58,7 @@ export default function Order({ cart, onStripeCheckout, onProductDelete }) {
             <p>{totalQuantity}</p>
             <p>
               <span>&#36;</span>
-              {totalProducts}
+              {financial(totalProducts)}
               {/* {product.quantity * product.price} */}
             </p>
             <Button>check out</Button>

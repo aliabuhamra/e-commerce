@@ -41,8 +41,6 @@ export default function Products() {
         </div>
 
         <div className='flex justify-center mb-28'>
-          {console.log("p ", products.length)}
-          {console.log("lim ", limit)}
           {products.length <= limit ? null : (
             <Button outline onClick={handleProductLimit}>
               More products

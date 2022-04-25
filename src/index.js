@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { ProductsProvider } from "./components/ProductsProvider";
 import { BrowserRouter } from "react-router-dom";
 import App from './App';
+import 'animate.css';
 import './index.css';
 
 ReactDOM.render(

@@ -17,7 +17,6 @@ export default function App() {
   let [quantity, setQuantity] = useState(1)
 
   useEffect(() => {
-    console.log(cart.length)
 
     // Store after JSON stringifying (is this a verb?) it
     localStorage.setItem('product', JSON.stringify(cart))
@@ -36,7 +35,6 @@ export default function App() {
         successUrl: 'http://localhost:3000/',
         cancelUrl: 'http://localhost:3000/',
       });
-      console.log(result)
     } catch (error) {
       console.log(error);
     }
