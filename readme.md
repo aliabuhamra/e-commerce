@@ -69,11 +69,11 @@ Users should be able to:
 
   - What if you need to run a piece of code whenever React Router navigates to a new URL?
   - You can do that with the useLocation hook.
-     - run a piece of code on location change 
-     - This hook returns the location object used by the react-router.
-     - This object represents the current URL and is immutable.
-     - Whenever the URL changes, the useLocation() hook returns a newly updated location object.<br/>
-          ```useEffect(() => { console.log(location.pathname);// send it to analytic, or do some conditional logic here }[location]);```
+    - run a piece of code on location change
+    - This hook returns the location object used by the react-router.
+    - This object represents the current URL and is immutable.
+    - Whenever the URL changes, the useLocation() hook returns a newly updated location object.<br/>
+      `useEffect(() => { console.log(location.pathname);// send it to analytic, or do some conditional logic here }[location]);`
 
 - I used react router, [BrwoserRoute , Routes , Route , Link , params]
   This is part of the code I was facing the challenge with
@@ -94,6 +94,10 @@ Users should be able to:
     ```
 
 </details>
+- I faced problems with netlify router , He needed to get him on the right track, Because the local path is different from the path in the host netlify,
+I found the solution to the problem in this link
+  - [Link - Stackoverflow](https://stackoverflow.com/questions/55990467/catch-all-redirect-for-create-react-app-in-netlify)
+  - [Link - Netlify](https://play.netlify.com/redirects)
 
 ### Useful resources
 
@@ -111,4 +115,3 @@ Users should be able to:
 - Twitter - [@AliAbuhumra](https://twitter.com/aliabuhumra)
 
 Thanks for checking out this project.
-
